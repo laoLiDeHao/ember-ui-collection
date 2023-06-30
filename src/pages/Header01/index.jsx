@@ -93,7 +93,7 @@ const Header01 = () => {
               background
               blur={0.8}
             /> */}
-            {/* <OrbitControls /> */}
+            <OrbitControls enableDamping={false} enableZoom={false} />
           </Canvas>
         </div>
         <div className="download_icon cursored">
