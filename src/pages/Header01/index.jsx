@@ -39,7 +39,9 @@ const Header01 = () => {
   const ref = useRef(null);
   useEffect(() => {
     window.addEventListener("resize", handleResize);
-    return () => {};
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
   return (
     <div ref={ref} className="header01">

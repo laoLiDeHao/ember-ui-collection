@@ -4,6 +4,7 @@
 import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Header01 from './pages/Header01/index.jsx'
+import Header02 from './pages/Header02/index.jsx'
 BrowserRouter
 function App() {
 
@@ -11,7 +12,9 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Header01 />}></Route>
+        <Route path='/' element={<Header02 />}></Route>
+        <Route path='/Header01' element={<Header01 />}></Route>
+        <Route path='Header02' element={<Header02/>}></Route>
       </Routes>
     </BrowserRouter>
   )
